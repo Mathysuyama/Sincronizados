@@ -3,9 +3,9 @@ import os as o
 # Modo tradicional
 
 # O nome do arquivo que você quer ler
-nome_do_arquivo = 'teste.txt'
+nome_do_arquivo = " "
 
-def ler_arquivo(ler = nome_do_arquivo):
+def ler_arquivo(ler):
     try:
         # 'with' garante que o arquivo será fechado no final.
         # 'r' é o modo de leitura (read).
@@ -20,5 +20,3 @@ def ler_arquivo(ler = nome_do_arquivo):
         print(f"Erro: O arquivo '{ler}' não foi encontrado.")
     except Exception as e:
          print(f"Ocorreu um erro: {e}")
-         
-ler_arquivo()
